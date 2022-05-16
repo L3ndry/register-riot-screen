@@ -1,0 +1,3 @@
+function textValidator(button) {
+
+}
