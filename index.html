@@ -21,13 +21,13 @@
                     <td>
                         <div id="forms-name">
                             <label class="full" for="name">Username:</label>
-                            <input type="text" name="name" required>
+                            <input id="input-name" type="text" name="name" placeholder="letters only" required>
                         </div>
                     </td>
                     <td>
                         <div id="forms-password">
                             <label class="full" for="password">Password: </label>
-                            <input type="password" name="password" required>
+                            <input type="password" name="password" placeholder="example: aZ@123" maxlength="12" minlength="5" required>
                         </div>
                     </td>
                 </tr>
@@ -36,14 +36,13 @@
                     <td>
                         <div id="forms-date">
                             <label class="full" for="date">Birth Date: </label>
-                            <input type="date" name="date" required>
-                    </div>
+                            <input id="date-input" type="date" name="date" required>
+                        </div>
                     </td>
-
                     <td>
                         <div id="forms-password2">
                             <label class="full" for="password2">Confirm Password: </label>
-                            <input type="password" name="password2" required>
+                            <input type="password" name="password2" maxlength="12" minlength="5" required>
                         </div>
                     </td>
                 </tr>
@@ -55,10 +54,9 @@
                             <input type="email" name="email" placeholder="example@example.com" required>
                         </div>
                     </td>
-
                     <td>
-                        <label class="full" for="cellphone">Cellphone Number: </label>
-                        <input type="text" name="cellphone" required>
+                        <label for="cellphone">Cellphone Number: </label>
+                        <input id="input-cellphone" type="text" name="cellphone" placeholder="(00) 0000-0000" maxlength="11" required>
                     </td>
                 </tr>
             </table>

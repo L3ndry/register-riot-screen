@@ -3,11 +3,8 @@
     padding: 0;
 }
 
-/* :root {
-    
-} */
-
 html {
+    font-family: 'Bebas Neue', cursive;
     background-image: url(../img/yasuo.gif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,8 +18,8 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 550px;
-    height: 350px;
+    width: 500px;
+    height: 340px;
     border-radius: 15px;
     transition: 1s;
     
@@ -33,18 +30,9 @@ html {
 #container:hover {
     filter: brightness(1) saturate(1);
     background-color: #ffffffb0;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 445px;
     border-radius: 10px;
-}
-
-#container:hover #forms-submit {
-    margin-top: 8%;
-    /* transition: 1s; */
-}
-
-#container #forms-submit {
-    transition: 1s;
 }
 
 #container input {
@@ -53,40 +41,56 @@ html {
 }
 
 table {
+    border-collapse: separate;
+    border-spacing: 25px;
+    width: 80%;
     text-align: center;
+    margin-left: 5%;
+    font-size: medium;
+    border-width: 1px;
+    font-weight: 400;
+    transition: 1s;
+}
+
+#container:hover table {
+    margin-left: 2%;
+    border-spacing: 35px;
 }
 
 #riot-logo-area {
     text-align: center;
     margin: auto;
-    margin: 20px 0 20px 0;
-}
-
-#riot-logo {
-    width: 40%;
-}
-
-#forms-submit {
     margin-top: 30px;
 }
 
-#register-button {
+#riot-logo {
     width: 30%;
+}
+
+#date-input {
+    width: 185px;
+}
+
+#forms-submit {
+    visibility: hidden;
+}
+
+#container:hover #forms-submit {
+    transition-delay: 0.6s;
+    visibility: visible;
+}
+
+#register-button {
+    width: 20%;
     height: 50px;
     text-align: center;
     padding-right: 5px;
+    box-shadow: 0 0 4px black;
+    transition: 0.5s;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.full {
-    width: 100%;
+#register-button:active {
+    box-shadow: 0 0 0;
 }
 
 .center {
