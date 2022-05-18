@@ -2,13 +2,26 @@
 let inputName = document.querySelector("#input-name");
 // Digitar apenas letras
 inputName.addEventListener("keydown", function (button) {
-    if (button.key >= "0" && button.key <= "9")
+    if (button.key > "0" && button.key < "9")
     button.preventDefault();
 });
 
+// inputName.addEventListener("blur", function () {
+//     let numeros = "1234567890"
+//     if (numeros in inputName.value) {
+//         inputName.value = "";
+//         alert("Apenas letras no campo do usuário.")
+//         
+//         
+//          NÃO ESTÁ FUNCIONANDO!
+//         
+//         
+//     }
+// })
+
 
 // Celular
-var inputCellphone = document.querySelector('#input-cellphone');
+let inputCellphone = document.querySelector('#input-cellphone');
 
 inputCellphone.addEventListener("blur", function () {
   //Remove tudo o que não é dígito
@@ -21,4 +34,17 @@ if (celular.length == 11) {
 } else if (celular.length >= 1) {
     alert("Alert")
 }
+});
+
+let inputPassword = document.querySelector("#input-password");
+
+let inputPassword2 = document.querySelector("#input-password2");
+
+
+inputPassword2.addEventListener("blur", function () {
+    if (inputPassword.value == inputPassword2.value) {
+        alert("Senhas coincidem.");
+    } else {
+        alert("Senhas NÃO coincidem!")
+    }
 });
