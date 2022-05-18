@@ -2,22 +2,22 @@
 let inputName = document.querySelector("#input-name");
 // Digitar apenas letras
 inputName.addEventListener("keydown", function (button) {
-    if (button.key > "0" && button.key < "9")
+    if (button.key >= "0" && button.key <= "9")
     button.preventDefault();
 });
 
-// inputName.addEventListener("blur", function () {
-//     let numeros = "1234567890"
-//     if (numeros in inputName.value) {
-//         inputName.value = "";
-//         alert("Apenas letras no campo do usuário.")
-//         
-//         
-//          NÃO ESTÁ FUNCIONANDO!
-//         
-//         
-//     }
-// })
+inputName.addEventListener("blur", function () {
+    let numeros = "1234567890"
+    if (hasNumber(inputName.value)) {
+        inputName.value = ""
+        alert("Há um número no campo de Username.")
+    }   
+});
+
+
+function hasNumber(myString) {
+    return /\d/.test(myString);
+} 
 
 
 // Celular

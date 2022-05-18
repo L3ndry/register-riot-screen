@@ -19,7 +19,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    height: 340px;
+    height: 320px;
     border-radius: 15px;
     transition: 1s;
     
@@ -31,30 +31,27 @@ html {
     filter: brightness(1) saturate(1);
     background-color: #ffffffb0;
     width: 500px;
-    height: 445px;
+    height: 425px;
     border-radius: 10px;
 }
 
 #container input {
     border-width: 0;
     padding-left: 5px;
+    width: 80%;
 }
 
 table {
     border-collapse: separate;
-    border-spacing: 25px;
-    width: 80%;
+    border-spacing: 20px;
     text-align: center;
-    margin-left: 5%;
     font-size: medium;
-    border-width: 1px;
     font-weight: 400;
     transition: 1s;
 }
 
 #container:hover table {
-    margin-left: 2%;
-    border-spacing: 35px;
+    border-spacing: 30px;
 }
 
 #riot-logo-area {
