@@ -14,7 +14,6 @@ inputName.addEventListener("blur", function () {
     }   
 });
 
-
 function hasNumber(myString) {
     return /\d/.test(myString);
 } 
